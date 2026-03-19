@@ -1,0 +1,13 @@
+{
+  "summary": "Adds a .gitignore to the seeded `docs/agent-outputs` directory to prevent agent execution artifacts from being committed. This is a preventative measure for log cleanup, ensuring that generated files in that directory are ignored by Git.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "  \"docs/agent-outputs/.gitkeep\": \"\"",
+      "replace": "  \"docs/agent-outputs/.gitkeep\": \"\",\n  \"docs/agent-outputs/.gitignore\": \"*\\n!.gitkeep\""
+    }
+  ],
+  "meta": {}
+}
