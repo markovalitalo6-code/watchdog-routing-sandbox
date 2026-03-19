@@ -1,0 +1,13 @@
+{
+  "summary": "Adds the `scope:seed` label to the bootstrap labels in `seed_manifest.mjs`. This will help categorize the initial issue created during repository seeding.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "export const LABEL_BOOTSTRAP = [\n  \"agent:builder\",\n  \"agent:reviewer\"\n];",
+      "replace": "export const LABEL_BOOTSTRAP = [\n  \"agent:builder\",\n  \"agent:reviewer\",\n  \"scope:seed\"\n];"
+    }
+  ],
+  "meta": {}
+}
