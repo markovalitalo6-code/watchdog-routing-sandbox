@@ -1,0 +1,13 @@
+{
+  "summary": "Adds the 'watchdog:managed' label to the seed manifest for new repositories. This will help identify repositories that are being managed by Repo Watchdog.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "export const LABEL_BOOTSTRAP = [\n  \"agent:builder\",\n  \"agent:reviewer\"\n];",
+      "replace": "export const LABEL_BOOTSTRAP = [\n  \"agent:builder\",\n  \"agent:reviewer\",\n  \"watchdog:managed\"\n];"
+    }
+  ],
+  "meta": {}
+}
