@@ -1,0 +1,13 @@
+{
+  "summary": "Adds the 'agent:orchestrator' label to the bootstrap label list in the seed manifest, expanding the set of predefined labels for repository initialization.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "export const LABEL_BOOTSTRAP = [\n  \"agent:builder\",\n  \"agent:reviewer\"\n];",
+      "replace": "export const LABEL_BOOTSTRAP = [\n  \"agent:builder\",\n  \"agent:reviewer\",\n  \"agent:orchestrator\"\n];"
+    }
+  ],
+  "meta": {}
+}
