@@ -1,0 +1,15 @@
+```json
+{
+  "summary": "Add `scripts/orchestrator/continuation` to the list of required seed paths to support external continuation loops.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "export const REQUIRED_SEED_PATHS = [\n  \".github/workflows/agent-runner.yml\",\n  \"scripts/agent\",\n  \"scripts/orchestrator/runtime\",\n  \"scripts/orchestrator/council\",\n];",
+      "replace": "export const REQUIRED_SEED_PATHS = [\n  \".github/workflows/agent-runner.yml\",\n  \"scripts/agent\",\n  \"scripts/orchestrator/runtime\",\n  \"scripts/orchestrator/council\",\n  \"scripts/orchestrator/continuation\",\n];"
+    }
+  ],
+  "meta": {}
+}
+```
