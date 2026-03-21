@@ -1,0 +1,15 @@
+```json
+{
+  "summary": "In `scripts/orchestrator/seeding/seed_manifest.mjs`, I have added the path `scripts/orchestrator/reviewer` to the `REQUIRED_SEED_PATHS` array. This addition is based on the issue title 'Build: reviewer read-only proof v1' and aligns with the existing `agent:reviewer` label found in the same file, suggesting a new component for the reviewer agent.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "export const REQUIRED_SEED_PATHS = [\n  \".github/workflows/agent-runner.yml\",\n  \"scripts/agent\",\n  \"scripts/orchestrator/runtime\",\n  \"scripts/orchestrator/council\",\n];",
+      "replace": "export const REQUIRED_SEED_PATHS = [\n  \".github/workflows/agent-runner.yml\",\n  \"scripts/agent\",\n  \"scripts/orchestrator/runtime\",\n  \"scripts/orchestrator/council\",\n  \"scripts/orchestrator/reviewer\",\n];"
+    }
+  ],
+  "meta": {}
+}
+```
