@@ -4,6 +4,7 @@ export const REQUIRED_SEED_PATHS = [
   "scripts/orchestrator/runtime",
   "scripts/orchestrator/council",
   "scripts/orchestrator/seeding",
+  "scripts/orchestrator/plugins",
 ];
 
 export const BASELINE_FILES = {
