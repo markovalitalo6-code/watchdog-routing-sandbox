@@ -5,6 +5,7 @@ export const REQUIRED_SEED_PATHS = [
   "scripts/orchestrator/council",
   "scripts/orchestrator/seeding",
   "scripts/orchestrator/plugins",
+  "scripts/orchestrator/plugins/telegram",
 ];
 
 export const BASELINE_FILES = {
