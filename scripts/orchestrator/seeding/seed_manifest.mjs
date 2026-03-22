@@ -3,6 +3,7 @@ export const REQUIRED_SEED_PATHS = [
   "scripts/agent",
   "scripts/orchestrator/runtime",
   "scripts/orchestrator/council",
+  "scripts/orchestrator/seeding",
 ];
 
 export const BASELINE_FILES = {

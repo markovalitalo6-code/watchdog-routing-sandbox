@@ -1,0 +1,17 @@
+{
+  "summary": "Added 'scripts/orchestrator/seeding' to the REQUIRED_SEED_PATHS array in seed_manifest.mjs using a grounded replace edit matching the exact visible content.",
+  "result": "success",
+  "edits": [
+    {
+      "action": "replace",
+      "file": "scripts/orchestrator/seeding/seed_manifest.mjs",
+      "find": "export const REQUIRED_SEED_PATHS = [\n  \".github/workflows/agent-runner.yml\",\n  \"scripts/agent\",\n  \"scripts/orchestrator/runtime\",\n  \"scripts/orchestrator/council\",\n];",
+      "replace": "export const REQUIRED_SEED_PATHS = [\n  \".github/workflows/agent-runner.yml\",\n  \"scripts/agent\",\n  \"scripts/orchestrator/runtime\",\n  \"scripts/orchestrator/council\",\n  \"scripts/orchestrator/seeding\",\n];"
+    }
+  ],
+  "meta": {
+    "target_repo": "markovalitalo6-code/watchdog-routing-sandbox",
+    "continuation_depth": 0,
+    "issue": "Build: target-repo apply proof v1"
+  }
+}
